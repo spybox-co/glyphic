@@ -1,5 +1,5 @@
 {
-  "name": "spybox-glyphic-proto",
+  "name": "glyphic",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "develop": "set PORT=4444 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
