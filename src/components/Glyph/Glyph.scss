@@ -1,8 +1,7 @@
 @import '../../styles/variables.scss';
 
 
-
-.glyph {
+.Glyph {
   display: flex;
   position: relative;
   font-size: 2rem;
@@ -15,14 +14,22 @@
   justify-content: center;
   align-items: center;
   background-color: $white;
-
+  transition: 300ms;
   cursor: pointer;
   &:hover {
     background-color: $gray-10-hover;
-
-    .glyph-action {
+    .glyph-action,
+    .glyph-code {
       display: block;
     }
+  }
+  &:active {
+    background-color: $gray-30;
+  }
+  &:focus {
+    outline: 2px solid $primary-color;
+    outline-offset: 1px;
+    z-index: 1;
   }
   a {
     display: flex;
@@ -43,14 +50,15 @@
 .glyph-code,
 .glyph-action {
   position: absolute;
+  display: none;
 }
 
 .glyph-number,
 .glyph-code {
   top: 0;
-  color: $gray-90;
-  font-size: 0.5rem;
-  padding: 0.25rem;
+  color: $gray-60;
+  font-size: 0.75rem;
+  padding: 0.5rem;
 }
 .glyph-number {
   left: 0;
@@ -59,7 +67,6 @@
   right: 0;
 }
 .glyph-action {
-  display: none;
   bottom: 0;
   right: 0;
   width: 3rem;

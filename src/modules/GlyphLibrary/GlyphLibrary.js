@@ -1,6 +1,7 @@
 import { Glyph } from '../../components/Glyph';
 import { Wrapper } from '../../containers/Wrapper';
-import './styles.scss';
+
+import './GlyphLibrary.scss';
 
 export const GlyphLibrary = (props) => {
   const { glyphs } = props;
