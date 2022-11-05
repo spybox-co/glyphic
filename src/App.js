@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { store } from './store.js';
 
 import { GlyphLibrary } from './modules/GlyphLibrary';
+import { CopyNotification } from './modules/CopyNotification';
 import { Main, Footer } from './layout';
 import { Wrapper } from './containers/Wrapper'
 
@@ -34,7 +35,7 @@ const App = () => {
   const { state, dispatch } = useContext(store);
 
   console.log(state);
-  
+
   return (
     <div className="App">
       <Header />
@@ -42,6 +43,7 @@ const App = () => {
         <GlyphLibrary glyphs={glyphs} />
       </Main>
       <Footer />
+      <CopyNotification />
     </div>
   );
 };
