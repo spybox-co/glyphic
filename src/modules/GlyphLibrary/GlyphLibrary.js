@@ -10,8 +10,8 @@ export const GlyphLibrary = (props) => {
       <div className="Glyphs-module">
         <ul className="glyph-library">
           {glyphs && glyphs.map((glyph, i) => (
-            <li key={i} className="Card">
-              <div className="Card-inside aspect-ratio-1-1">
+            <li key={i} className="Card aspect-ratio-1-1">
+              <div className="Card-inside">
                 <div className="Card-object">
                   <Glyph glyph={glyph} index={i} />
                 </div>

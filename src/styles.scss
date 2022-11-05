@@ -1,4 +1,5 @@
 @import 'styles/variables.scss';
+@import 'styles/typography.scss';
 
 * {
   box-sizing: border-box;
@@ -11,46 +12,34 @@ body {
   font-family: $font-stack; //"Inter", sans-serif;
   background-color: $background;
 }
-
-.App {
-  
-  // text-align: center;
-}
-
 ul {
   padding: 0;
 }
 li {
   list-style-type: none;
 }
+
+
+
+.App {
+  min-width: 20rem;
+}
+
 .Head {
   display: flex;
   flex-direction: column;
 }
 
 .lead-space {
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .logo {
   display: flex;
-  padding: 1rem 3rem;
+  padding: 1rem 0;
   position: relative;
   font-size: 3rem;
-  // width: 9rem;
   height: 9rem;
-  
-  // justify-content: center;
-  // align-items: center;
   margin: 1px;
-  // background-color: #f4f4f4;
-  // cursor: pointer;
-  // &:hover {
-  //   background-color: #d8d8d8;
-  // }
-  // a {
-  //   color: inherit;
-  //   text-decoration: none;
-  // }
 }
 
