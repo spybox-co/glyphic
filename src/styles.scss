@@ -1,3 +1,5 @@
+@import 'styles/variables.scss';
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +8,8 @@ html {
 }
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: $font-stack; //"Inter", sans-serif;
+  background-color: $background;
 }
 
 .App {

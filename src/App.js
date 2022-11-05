@@ -1,4 +1,5 @@
-import { GlyphList, Glyph } from './components/Glyph';
+import { GlyphLibrary } from './modules/GlyphLibrary';
+import { Footer } from './layout';
 
 import { glyphs } from './utils/glyphData';
 
@@ -18,23 +19,12 @@ const Header = () => {
   )
 }
 
-const GlyphModule = () => (
-  <div className="Glyphs-module">
-    
-    <GlyphList>
-      {glyphs.map((glyph, i) => (
-        <Glyph key={i} glyph={glyph} index={i} />
-      ))}
-    </GlyphList>
-  </div>
-);
-
-
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <GlyphModule />
+      <GlyphLibrary glyphs={glyphs} />
+      <Footer />
     </div>
   );
 };

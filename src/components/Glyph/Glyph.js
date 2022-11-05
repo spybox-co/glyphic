@@ -1,4 +1,5 @@
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import Icon from '../Icon';
 
 import './styles.scss';
 
@@ -14,13 +15,16 @@ export const Glyph = (props) => {
   if (glyph) {
     return (
       <CopyToClipboard text={glyph} onCopy={() => copyToClipboard(glyph)}>
-        <li id={`glyph-${unicodeToStr(glyph)}`} className="glyph">
-          <a href={`#glyph-${unicodeToStr(glyph)}`}>
-            <span>{glyph}</span>
+        <div id={`glyph-${unicodeToStr(glyph)}`} className="glyph">
+          <div href={`#glyph-${unicodeToStr(glyph)}`}>
+            <span className="glyph-symbol">{glyph}</span>
             <div className="glyph-number">{index + 2}</div>
             <div className="glyph-code">{unicodeToStr(glyph)}</div>
-          </a>
-        </li>
+            <div className="glyph-action">
+              <Icon type="Copy" stroke={1} />
+            </div>
+          </div>
+        </div>
       </CopyToClipboard>
     );
   }

@@ -1,0 +1,10 @@
+.Wrapper {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 166rem;
+  width: 100%;
+  min-width: 20rem;
+  @media (max-width: 66rem) {
+    padding: 0 1rem;
+  }
+}
