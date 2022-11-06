@@ -12,8 +12,10 @@ export const Glyph = (props) => {
 
   const copyToClipboard = (value) => {
     console.log('copied value:', value, typeof value);
-    dispatch('copied element', value);
-    dispatch('set copied', true);
+
+
+    dispatch({ type: 'copied element', value: value });
+    dispatch({ type: 'set copied', value: true });
     console.log(state);
   };
   const unicodeToStr = (glyph) => {
