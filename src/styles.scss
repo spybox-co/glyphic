@@ -9,7 +9,8 @@ html {
 }
 body {
   margin: 0;
-  font-family: $font-stack; //"Inter", sans-serif;
+  font-family: $font-stack;
+  font-feature-settings: $font-settings-01;
   background-color: $background;
 }
 ul {
