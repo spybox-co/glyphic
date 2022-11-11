@@ -1,8 +1,8 @@
 47 lines (46 sloc)  964 Bytes
 
 {
-  "short_name": "Leaf Maps",
-  "name": "SPYBOX Leaf Maps",
+  "short_name": "Glyphic",
+  "name": "SPYBOX Glyphic",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
@@ -43,6 +43,6 @@
       "density": 1
     }
   ],
-  "theme_color": "#161616",
-  "background_color": "#161616"
+  "theme_color": "#002D9C",
+  "background_color": "#002D9C"
 }
