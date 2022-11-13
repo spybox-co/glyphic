@@ -1,6 +1,6 @@
-import { createContext, useReducer, useEffect } from 'react';
+import { createContext, useReducer } from 'react';
 
-// Toptal
+// @See: Toptal example
 // https://www.toptal.com/react/react-context-api
 
 const initialState = {

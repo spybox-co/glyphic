@@ -1,8 +1,8 @@
 import { settings } from '../../utils/data';
 
-import { Wrapper } from '../../containers/Wrapper';
+import { Wrapper } from "../../containers/Wrapper";
 
-import './Footer.scss';
+import "./Footer.scss";
 
 export const Footer = () => (
   <footer className="Footer">

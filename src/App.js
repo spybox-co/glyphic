@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { React, useContext } from 'react';
 import { store } from './store.js';
 
 import { GlyphLibrary } from './modules/GlyphLibrary';
@@ -58,4 +58,3 @@ const App = () => {
 };
 
 export default App;
-

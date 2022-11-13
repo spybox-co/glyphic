@@ -1,15 +1,10 @@
-47 lines (46 sloc)  964 Bytes
-
 {
-  "short_name": "Glyphic",
-  "name": "SPYBOX Glyphic",
-  "start_url": "/",
-  "display": "standalone",
-  "orientation": "portrait",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "128x128 96x96 64x64 48x48 32x32 24x24 16x16",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
@@ -43,6 +38,8 @@
       "density": 1
     }
   ],
-  "theme_color": "#002D9C",
-  "background_color": "#002D9C"
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
