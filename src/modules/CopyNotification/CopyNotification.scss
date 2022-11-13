@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.Notification {
+  position: sticky;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  color: $gray-100;
+}
+.Notification-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.Notification-content {
+  padding: 1rem;
+  background: $yellow-color;
+  margin: 1rem auto;
+}

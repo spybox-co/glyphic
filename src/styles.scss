@@ -1,0 +1,49 @@
+@import 'styles/variables.scss';
+@import 'styles/typography.scss';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: $font-stack;
+  font-feature-settings: $font-settings-01;
+  background-color: $blue-80;
+  color: $white;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+
+
+
+.App {
+  min-width: 20rem;
+}
+
+.Head {
+  display: flex;
+  flex-direction: column;
+  color: $blue-20;
+}
+
+.lead-space {
+  margin: 1rem 0;
+  color: $blue-20;
+}
+
+.logo {
+  display: flex;
+  padding: 1rem 0;
+  position: relative;
+  font-size: 3rem;
+  height: 9rem;
+  margin: 1px;
+}
+
