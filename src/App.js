@@ -40,7 +40,7 @@ const LeadSpace = () => {
 }
 
 const App = () => {
-  const { state, dispatch } = useContext(store);
+  const { state } = useContext(store);
 
   console.log(state);
 

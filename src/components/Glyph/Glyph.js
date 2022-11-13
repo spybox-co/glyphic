@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext } from 'react';
 import { store } from '../../store.js';
 
 import Icon from '../Icon';
@@ -12,13 +12,12 @@ const unicodeToStr = (glyph) => {
 
 
 export const Glyph = (props) => {
-  const { glyph, index } = props;
-  const { state, dispatch } = useContext(store);
-
-  const [ symbol, setSymbol ] = useState(null);
+  const { glyph } = props;
+  const { dispatch } = useContext(store);
 
 
   const id = `glyph-${unicodeToStr(glyph)}`;
+  const symbol = `${unicodeToStr(glyph)}`;
 
   const copyToClipboard = (value) => {
 
@@ -31,22 +30,17 @@ export const Glyph = (props) => {
     dispatch({ type: 'set copied', value: true });
   };
 
-  useEffect(() => {
-    setSymbol(`${unicodeToStr(glyph)}`);
-  }, [])
-
   if (glyph) {
     return (
-      <a id={id} className="Glyph" onClick={() => copyToClipboard(glyph)}>
+      <div role="button" id={id} className="Glyph" onClick={() => copyToClipboard(glyph)}>
         <div href={`#${id}`}>
           <span className="glyph-symbol responsive-heading-05">{glyph}</span>
-          {/* <div className="glyph-number">{index + 1}</div> */}
           <div className="glyph-code">{symbol}</div>
           <div className="glyph-action">
             <Icon type="Copy" stroke={1} />
           </div>
         </div>
-      </a>
+      </div>
     );
   }
   return null;

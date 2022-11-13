@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { store } from '../../store.js';
 
 import { Wrapper } from '../../containers/Wrapper'
@@ -7,9 +7,8 @@ import './CopyNotification.scss';
 
 
 
-export const CopyNotification = (props) => {
+export const CopyNotification = () => {
   const { state, dispatch } = useContext(store);
-  // const [ isCopied, setCopied ] = useState(state.isCopied)
 
   const { isCopied, copiedElement } = state;
 
@@ -19,6 +18,7 @@ export const CopyNotification = (props) => {
         dispatch({ type: 'set copied', value: false });
       }, 2000);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isCopied])
 
   const NotificationContent = () => {
