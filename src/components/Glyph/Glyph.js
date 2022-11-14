@@ -32,7 +32,7 @@ export const Glyph = (props) => {
 
   if (glyph) {
     return (
-      <div role="button" id={id} className="Glyph" onClick={() => copyToClipboard(glyph)}>
+      <button id={id} className="Glyph" onClick={() => copyToClipboard(glyph)}>
         <div href={`#${id}`}>
           <span className="glyph-symbol responsive-heading-05">{glyph}</span>
           <div className="glyph-code">{symbol}</div>
@@ -40,7 +40,7 @@ export const Glyph = (props) => {
             <Icon type="Copy" stroke={1} />
           </div>
         </div>
-      </div>
+      </button>
     );
   }
   return null;

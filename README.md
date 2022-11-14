@@ -39,9 +39,9 @@ To Start Server:
 
 `npm start`  
 
-To Visit App:
+To run App:
 
-`localhost:3000/ideas`  
+`localhost:3000`  
 
 
 ## Symbols Gallery

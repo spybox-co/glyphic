@@ -9,7 +9,7 @@ $gutter: 1px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -1rem;
+  // margin: -1rem;
   margin-bottom: 4rem;
 }
 
@@ -18,12 +18,13 @@ $gutter: 1px;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 3rem;
-  color: $blue-80;
 }
 
 
 .Card {
-  padding: $gutter;
+  // padding: $gutter;
+  padding-right: $gutter;
+  padding-bottom: $gutter;
   &.aspect-ratio-flex {
     flex-grow: 1;
     min-width: calc(100% / 4);
