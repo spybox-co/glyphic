@@ -20,7 +20,7 @@ const Header = () => {
     <header>
       <Wrapper className="Head">
         <div className="logo">
-          <div className="productive-heading-07">₲L¥₽HI₡</div>
+          <h1 className="responsive-heading-04">₲L¥₽HI₡</h1>
         </div>
       </Wrapper>
     </header>
@@ -30,10 +30,10 @@ const Header = () => {
 const LeadSpace = () => {
   return (
     <section>
-      <Wrapper className="lead-space">
-        <h1 className="responsive-heading-02">Welcome to Glyphic</h1>
-        <h2 className="responsive-heading-04">Copy and paste cool symbols</h2>
-        <div className="responsive-heading-06">↓</div>
+      <Wrapper className="lead-space column">
+        <h1 className="responsive-heading-06 monoblock">Welcome to Glyphic</h1>
+        <h2 className="responsive-paragraph-03 monoblock">Copy and paste cool symbols</h2>
+        <div className="responsive-paragraph-03 monoblock">↓</div>
       </Wrapper>
     </section>
   )

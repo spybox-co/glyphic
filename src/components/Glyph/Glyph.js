@@ -34,7 +34,7 @@ export const Glyph = (props) => {
     return (
       <div role="button" id={id} className="Glyph" onClick={() => copyToClipboard(glyph)}>
         <div href={`#${id}`}>
-          <span className="glyph-symbol responsive-heading-05">{glyph}</span>
+          <span className="glyph-symbol responsive-heading-04">{glyph}</span>
           <div className="glyph-code">{symbol}</div>
           <div className="glyph-action">
             <Icon type="Copy" stroke={1} />

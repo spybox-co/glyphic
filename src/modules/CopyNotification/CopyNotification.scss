@@ -15,9 +15,11 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  
 }
 .Notification-content {
   padding: 1rem;
-  background: $yellow-color;
+  background: $white;
   margin: 1rem auto;
+  box-shadow: $elev-700;
 }

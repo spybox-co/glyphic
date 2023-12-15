@@ -1,5 +1,6 @@
 @import 'styles/variables.scss';
 @import 'styles/typography.scss';
+@import './styles/fibre.scss';
 
 * {
   box-sizing: border-box;
@@ -11,8 +12,8 @@ body {
   margin: 0;
   font-family: $font-stack;
   font-feature-settings: $font-settings-01;
-  background-color: $blue-80;
-  color: $white;
+  background-color: $blue-40;
+  color: $blue-80;
 }
 ul {
   padding: 0;
@@ -30,12 +31,12 @@ li {
 .Head {
   display: flex;
   flex-direction: column;
-  color: $blue-20;
+  // color: $blue-20;
 }
 
 .lead-space {
   margin: 1rem 0;
-  color: $blue-20;
+  // color: $blue-20;
 }
 
 .logo {
