@@ -31,13 +31,41 @@ const LeadSpace = () => {
   return (
     <section>
       <Wrapper className="lead-space column">
-        <h1 className="responsive-heading-06 monoblock">Welcome to Glyphic</h1>
+        <h1 className="responsive-heading-06 monoblock">
+        <div>↘</div>
+          Welcome to Glyphic
+        </h1>
         <h2 className="responsive-paragraph-03 monoblock">Copy and paste cool symbols</h2>
         <div className="responsive-paragraph-03 monoblock">↓</div>
       </Wrapper>
     </section>
   )
 }
+
+const About = () => {
+  const description = `Please note that some glyphs may render slightly differently 
+  when pasting - or not display at all - depending on the typeface 
+  used in your chosen device or application.`
+
+
+  return(
+    <section id="about" className="About">
+      <Wrapper>
+        <div className="section-container">
+          {/* <h2>About</h2> */}
+          <div className="content column">
+            <p aria={description} className="responsive-paragraph-02 monoblock">
+              <div>{`×`}</div>
+              ₽lea$e №te th₳t some ₲lyph$ may render slightly differently 
+              when pasting—or not display at all—depending on the typeface 
+              used in your chosen device or application.
+            </p>
+          </div>
+        </div>
+      </Wrapper>
+    </section>
+  );
+};
 
 const App = () => {
   const { state } = useContext(store);
@@ -50,6 +78,7 @@ const App = () => {
       <LeadSpace />
       <Main>
         <GlyphLibrary glyphs={glyphs} />
+        <About />
       </Main>
       <Footer />
       <CopyNotification />
@@ -58,3 +87,5 @@ const App = () => {
 };
 
 export default App;
+
+

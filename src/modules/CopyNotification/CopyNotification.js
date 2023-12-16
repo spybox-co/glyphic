@@ -25,7 +25,7 @@ export const CopyNotification = () => {
     return (
       <Wrapper className="Notification-container">
         <div className="Notification-content">
-          Copied element to clipboard <strong>{copiedElement}</strong>
+          Copied <Glyph type={copiedElement} /> element to clipboard 
         </div> 
       </Wrapper>
     )
@@ -36,4 +36,9 @@ export const CopyNotification = () => {
       {isCopied && <NotificationContent />}
     </div>
   );
+};
+
+
+const Glyph = ({ type }) => {
+  return <div className="glyph">{type || '↑'}</div>;
 };
