@@ -7,7 +7,7 @@ export default function Icon({ type, className, size, color, set, stroke }) {
       <SWMIcon
         name={type || "Circle"}
         color={color || "currentColor"}
-        set={set || "oultine"}
+        set={set || "outltine"}
         size={size || 16}
         strokeWidth={stroke || 2}
       />
