@@ -6,26 +6,25 @@ import { ArabicToRoman } from '../../utils/helpers.js';
 
 import './Footer.scss';
 
-const romanDate = () => {
-  const date = new Date().getFullYear();
+const date = new Date().getFullYear();
 
+const romanDate = () => {
   return ArabicToRoman(date);
 }
 
-
 export const Footer = () => (
-  <footer className="Footer">
+  <footer className="Footer" tabindex="0">
     <Wrapper>
       <div className="Footer-container">
         <p>
           {settings.appName}
         </p>
-        <p>{`© ${romanDate()}`}</p>
+        <p aria-label={`Copyright ${date}`}>{`© ${romanDate()}`}</p>
         <br />
         <p>
-          <strong>I d I ™</strong> DOMINIK KIEPUSZEWSKI
+          <strong aria-hidden="true">I d I ™</strong> DOMINIK KIEPUSZEWSKI
         </p>
-        <p>° ENJOY</p>
+        <p aria-hidden="true">° ENJOY</p>
       </div>
     </Wrapper>
   </footer>

@@ -7,11 +7,11 @@ import './Header.scss';
 export const Header = () => {
 
   return (
-    <header className="Header">
+    <header className="Header" role="banner" aria-hidden="true">
       <Wrapper>
         <div className="Header-container">
           <div className="Heading AppName">
-            <h1 className="responsive-heading-06">{settings.appName}</h1>
+            <div className="responsive-heading-06">{settings.appName}</div>
           </div>
         </div>
       </Wrapper>

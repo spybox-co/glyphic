@@ -48,6 +48,44 @@ li {
   margin: 1px;
 }
 
+.Navigation {
+  padding: 3rem 0;
+  
+  ul {
+    display: flex;
+    margin: 0 -1rem;
+  }
+
+
+}
+.NavLink {
+  padding: 1rem 1rem 2rem 1rem;
+  color: $blue-80;
+  background-color: $blue-40;
+  transition: 150ms;
+  &:hover {
+    color: $blue-80;
+    background-color: $blue-30;
+  }
+
+  .glyph {
+    margin-left: 1.5rem;
+  }
+}
+
+.Link {
+  // padding: 0rem 1rem 2rem 1rem;
+  color: $blue-80;
+  transition: 150ms;
+  &:hover {
+    color: $blue-100;
+  }
+
+  .glyph {
+    margin-left: 1.5rem;
+  }
+}
+
 .About {
   margin-bottom: 4rem;
 }
