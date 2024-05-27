@@ -30,13 +30,15 @@ const Header = () => {
 const LeadSpace = () => {
   return (
     <section>
-      <Wrapper className="lead-space column">
-        <h1 className="responsive-heading-06 monoblock">
-        <div>↘</div>
-          Welcome to Glyphic
-        </h1>
-        <h2 className="responsive-paragraph-03 monoblock">Copy and paste cool symbols</h2>
-        <div className="responsive-paragraph-03 monoblock">↓</div>
+      <Wrapper className="Leadspace">
+        <div className="Leadspace-container column">
+          <h1 className="responsive-heading-06 monoblock">
+          <div>↘</div>
+            Welcome to Glyphic
+          </h1>
+          <h2 className="responsive-paragraph-03 monoblock">Copy and paste cool symbols</h2>
+          <div className="responsive-paragraph-03 monoblock">↓</div>
+        </div>
       </Wrapper>
     </section>
   )

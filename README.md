@@ -1,10 +1,6 @@
-<img src="./public/images/logo-144.png" alt="Glyphic logo" title="Glyphic logo" width="144">
-<br>
-<br>
-<br>
+![Logo of Glyphic app](/public/images/logo-144.png "Logo of Glyphic app")
 
-
-# Glyphic
+# SPYBOX™ ₲L¥₽HI₡ App
 
 |   |   |   |   |   |   |   |
 |---|---|---|---|---|---|---|
